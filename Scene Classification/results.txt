@@ -1,0 +1,85 @@
+HOG SVM -
+
+ 4x4 cell size
+images resized to 200x200
+
+mean accuracy = 34.4
+
+2x2 cell size
+images resized to 200x200
+
+mean accuracy = 32.16
+
+8x8 cell size
+images resized to 200x200
+mean accuracy = 36.48
+
+16x16 cell size
+images resized to 200x200
+mean accuracy = 37.76
+
+32x32 cell size
+images resized to 200x200
+mean accuracy = 40.80
+* no major difference in performance between color and grayscale image
+
+64x64 cell size
+images resized to 200x200
+mean accuracy = 35.84
+
+all above are one vs one
+
+one vs one and one vs all (32x32)
+40.80 and 37.6
+
+for some reason with extra training data the performance is reducing
+for both one vs one and one vs all
+one vs one and one vs all (32x32)(extra)
+37 and 36.16
+
+- possible reason could be unequal training data, thus causing
+bias
+
+one vs all
+16x16
+29.92
+
+one vs all (32x32)
+original training data (decreasing order):
+performs very well on 
+streets (#4) 84%, 
+sand (#18) 76%, 
+bow window (#12) 72%, 
+bus interior (#25) 56%, 
+crevasse (#10) 56%
+
+worst performance:
+hospital room (#8) 16%, 
+train railway (#11) 16%, 
+shoe shop (#21) 12%, 
+operating room (#13) 12%, 
+butcher shop (#1) 12%
+
+one vs one (32x32)
+original training data (decreasing order):
+performs very well on:
+street (#4) 72%
+sand (#18) 60%
+mansion (#20) 60%
+orchard (#16) 56%
+bookstore (#9) 56%
+
+worst performance:
+dorm room (#6) 28%
+train railway (#11) 28%
+observatory (#24) 28%
+chicken coop (#22) 24%
+shoe shop (#21) 24%
+operating room (#13) 24%
+chalet (#7) 20%
+
+one vs all
+extra training data 36.16 accuracy
+* direct correlation between amount of data for each class and change
+in the correct classification of each class
+
