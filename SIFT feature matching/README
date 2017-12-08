@@ -1,0 +1,17 @@
+matchComparison.m uses the following library functions:
+vl_sift()
+dist2()
+showLinesBetweenMatches()
+
+detectObject.m uses the following library functions:
+vl_sift()
+dist2()
+drawRectangle()
+
+extraCredit.m uses the following library functions:
+vl_sift()
+dist2()
+showLinesBetweenMatches()
+drawRectangle()
+
+*images used for extra credit are also provided in a separate folder.
